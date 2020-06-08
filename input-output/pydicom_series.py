@@ -408,8 +408,8 @@ def read_files(path, showProgress=False, readPixelData=False, force=False):
     series.sort(key=lambda x: x.suid)
 
     # Split series if necessary
-    for serie in reversed([serie for serie in series]):
-        _splitSerieIfRequired(serie, series)
+    # for serie in reversed([serie for serie in series]):
+    #     _splitSerieIfRequired(serie, series)
 
     # Finish all series
     showProgress('Analysing series')
